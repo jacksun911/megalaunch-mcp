@@ -1,6 +1,7 @@
 {
   "name": "megalaunch-mcp",
   "version": "1.0.0",
+  "mcpName": "io.github.jacksun911/megalaunch-mcp",
   "description": "MCP server for MegaLaunch — AI-powered meme token launch service on Solana/pump.fun. Launch tokens with AI art, bundled buys, and Jito speed.",
   "type": "module",
   "main": "index.js",

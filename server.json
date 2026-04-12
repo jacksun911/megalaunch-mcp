@@ -1,24 +1,29 @@
 {
-  "name": "megalaunch-mcp",
-  "description": "MegaLaunch — Launch meme tokens on Solana/pump.fun with AI-generated art, bundled buys, and Jito-powered speed. Supports Basic (2 SOL) and Premium (5 SOL) packages.",
-  "version": "1.0.0",
-  "tools": [
-    {"name": "megalaunch_status", "description": "Check service status and recent launch stats"},
-    {"name": "megalaunch_pricing", "description": "Get current package pricing"},
-    {"name": "megalaunch_create_order", "description": "Create a new token launch order"},
-    {"name": "megalaunch_list_orders", "description": "List your token launch orders"},
-    {"name": "megalaunch_get_order", "description": "Get details of a specific order"},
-    {"name": "megalaunch_cancel_order", "description": "Cancel a pending order"}
-  ],
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.jacksun911/megalaunch-mcp",
+  "description": "AI-powered meme token launch service on Solana/pump.fun with bundled buys and Jito speed",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/jacksun911/megalaunch-mcp"
+    "url": "https://github.com/jacksun911/megalaunch-mcp",
+    "source": "github"
   },
+  "version": "1.0.0",
   "packages": [
     {
-      "registry_name": "npm",
-      "name": "megalaunch-mcp",
-      "version": "1.0.0"
+      "registryType": "npm",
+      "identifier": "megalaunch-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Your MegaLaunch API key",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "MEGALAUNCH_API_KEY"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "name": "megalaunch-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for MegaLaunch — AI-powered meme token launch service on Solana/pump.fun. Launch tokens with AI art, bundled buys, and Jito speed.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "megalaunch-mcp": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "solana",
+    "pump-fun",
+    "meme-coin",
+    "token-launch",
+    "ai-agent",
+    "megalaunch"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacksun911/megalaunch-mcp.git"
+  }
+}
